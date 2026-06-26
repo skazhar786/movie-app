@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+/* navbar */
+
+nav{
+    background-color: #232f3e;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 18px;
+    max-width: 1200px;
+}
+
+.search-container input,button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container input{
+    border-radius: 9px 0 0 9px;
+}
+.search-container button{
+    border-radius:0 9px 9px 0 ;
+    background: #f1cb43;
+    cursor: pointer;
+}
+
+.search-container button:hover{
+    background: #ffdd45;
+    transition: all 0.3s;
+}
+
+/* main section */
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-block: 38px;
+}
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.movie-container{
+   display: flex;
+   justify-content: center;
+   width: 80%;
+   background: #fff;
+   box-shadow: 0px 0px 0px 2px #ccc;
+   border-radius: 5px;
+}
+
+.moviePoster img{
+    height: 450px;
+    margin-right: 30px;
+    border-radius: 5px 0 0 5px;
+}
+
+.movieInfo{
+    padding-inline: 15px;
+}
+.movieInfo p{
+    font-size: 18px;
+    margin-block: 16px;
+    line-height: 24px;
+}
+.movieInfo h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0 12px 0;
+}
+
+.movieInfo h2 span{
+    font-size: 32px;
+    font-weight: 700;
+   
+}
+
+.movieInfo span{
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+
+.movieInfo h2+p{
+    text-align: center;
+}
+
+.movieGenre {
+    display: flex;
+    justify-content: center;
+    margin-inline: 5px;
+}
+
+.movieGenre p{
+    background: #232f3e;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #000000;
+    padding: 5px 14px;
+    margin-inline: 5px;
+    border-radius: 6px;
+}
+
+.noBackground{
+    background: none;
+   box-shadow:none;
+}
+
+/* footer section */
+
+footer{
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* responsive code  */
+
+@media screen and(max-width:950px){
+    .movie-container{
+        flex-direction: column;
+    }
+    
+    .moviePoster img{
+        width: 100%;
+        height: fit-content;
+        margin-right: 0;
+    }
+
+    .movieInfo{
+        padding-inline: 30px;
+    }
+}
